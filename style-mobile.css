@@ -1,0 +1,284 @@
+html, body {
+  margin:0px;
+  height:100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  background-image: url('assets/background-4.svg') !important;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 3px #303030;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 12px 12px 12px 32px;
+  text-decoration: none;
+  font-size: 64px;
+  font-family: "Poppins";
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  cursor: pointer;
+  color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#nav {
+  cursor: pointer;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  float: right;
+  z-index: 2;
+}
+
+.bar-1 {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin: 10px 5px;
+}
+
+.bar-2 {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 10px 5px;
+}
+.bar-3 {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 10px 5px;
+}
+.jumbotron {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#head {
+  background-image: url('assets/background-1-mobile.svg') !important;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.head-container {
+  padding-left: 10%;
+  padding-top: 200px;
+}
+
+
+.head-name {
+  font-size: 64px;
+  font-family: monospace;
+  margin-bottom: 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+}
+
+.head-status {
+  margin-top: 5px;
+  font-family: 'Jost', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+#about {
+  background-image: url('assets/background-2-mobile.svg') !important;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#about-container {
+  padding-left: 7%;
+  padding-top: 50px;
+  width: 90%;
+}
+
+.title {
+  font-size: 64px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#about-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+#skill {
+  position: relative;
+}
+
+.skill-background {
+  position: absolute;
+  background-image: url('assets/background-3-1-mobile.svg') !important;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.skill-content {
+  position: relative;
+  z-index: 1;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.skill-item {
+  display: flex;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 1px 1px 6px #303030;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#project {
+  background-image: url('assets/background-5-mobile.svg') !important;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.project-item {
+  box-shadow: 2px 2px 5px #0000007f;
+  background-color: white;
+  border-radius: 16px;
+  width: 70%;
+  height: 30%;
+  margin-bottom: 64px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.project-detail {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.project-img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50%;
+  align-self: center;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.project-link {
+  background-color: rgba(85, 85, 255, 80);
+  border-radius: 16px;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+}
+
+#contact {
+  background-image: url('assets/background-3-2-mobile.svg') !important;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25%;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-row {
+    height: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content:space-around;
+  }    
+}
+
+.contact-item {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #f3f3f3f3;
+  color: black;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
