@@ -5,14 +5,18 @@
   },
   {
     "name": "CodeIgnitor",
-    "value": 50
+    "value": 40
   },
   {
     "name": "Android Developer",
-    "value": 30
+    "value": 20
   },
   {
     "name": "React",
+    "value": 50
+  },
+  {
+    "name": "JavaScript",
     "value": 50
   },
   {
